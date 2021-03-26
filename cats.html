@@ -66,7 +66,7 @@
 angular.module('app', [])
 
 .controller('Ctrl', function($scope, $http) {
-  $http.get('cats.json').success(function(imgs) {
+  $http.get('gllry.json').success(function(imgs) {
     $scope.imgs = imgs.sort(function() {
       return 0.5 - Math.random()
     })
